@@ -2448,6 +2448,22 @@ p a {
   font-weight: 500;
 }
 
+.wrapper {
+  position: relative;
+}
+
+.lottie-container {
+  position: relative;
+  z-index: 1;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  z-index: 2;
+}
+
 /*----------------------------------------*/
 /*  04. CATEGORY CSS START
 /*----------------------------------------*/
@@ -3095,9 +3111,9 @@ p a {
 }
 
 .product__thumb-inner {
-  -webkit-border-radius: 6px 6px 0 0;
-  -moz-border-radius: 6px 6px 0 0;
-  border-radius: 6px 6px 0 0;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px ;
+  border-radius: 6px;
 }
 
 .product__tag a {
@@ -3492,7 +3508,7 @@ p a {
 }
 
 .mt_cat_title:hover {
-  color: #5F3AFB;
+  color: #dc3545;
 }
 
 .mt_cat_caps span {
@@ -3562,11 +3578,11 @@ div.product_new_item a {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  background-color: #f4f5f7;
+  /* background-color: #f4f5f7; */
   outline: 0;
   padding: 3px 20px;
   padding-bottom: 3px;
-  border: 1px solid #edeef3;
+  border: 2px solid #666666;
   margin: 0 8px;
   margin-bottom: 0px;
   line-height: 28px;
@@ -3649,6 +3665,12 @@ div.product_new_item a {
 
 .latest-comments ul li.children {
   margin-left: 100px;
+}
+
+.noContent {
+  color: #000 !important;
+  background-color: transparent !important;
+  pointer-events: none;
 }
 
 @media (max-width: 575px) {
@@ -7248,6 +7270,7 @@ div.product_new_item a {
 }
 
 .contact__input input,
+.contact__input select,
 .contact__input textarea {
   width: 100%;
   height: 60px;
@@ -7268,6 +7291,7 @@ div.product_new_item a {
 }
 
 .contact__input input:focus,
+.contact__input select:focus,
 .contact__input textarea:focus {
   outline: none;
   background: #ffffff;
@@ -7955,6 +7979,10 @@ div.product_new_item a {
 
 .footer__link ul li {
   margin-bottom: 9px;
+}
+
+.footer__link {
+  color: #99989e;
 }
 
 .footer__link ul li a {
