@@ -89,6 +89,7 @@ a {
 
 .w-img img {
   width: 100%;
+  /* padding: 2rem; */
 }
 
 .m-img img {
@@ -3112,7 +3113,7 @@ p a {
 
 .product__thumb-inner {
   -webkit-border-radius: 6px;
-  -moz-border-radius: 6px ;
+  -moz-border-radius: 6px;
   border-radius: 6px;
 }
 
@@ -4574,19 +4575,25 @@ div.product_new_item a {
 /*  11. BANNER CSS START
 /*----------------------------------------*/
 .banner__item {
-  padding: 45px 40px;
-  padding-right: 230px;
+  padding: 42px 40px;
+  /* padding-right: 230px; */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
+  box-shadow: 0px 30px 60px 0px rgba(8, 0, 42, 0.1);
+}
+
+.banner__item h2 {
+  font-size: 24px;
+  font-weight: 800;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .banner__item {
-    padding-right: 125px;
+    padding-right: auto;
   }
 }
 
@@ -4622,16 +4629,16 @@ div.product_new_item a {
 }
 
 .banner__title {
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 20px !important;
+  line-height: 30px !important;
   color: #ffffff;
-  font-weight: 800;
-  margin-bottom: 18px;
+  font-weight: 500 !important;
+  /* margin-bottom: 18px; */
 }
 
 @media (max-width: 575px) {
   .banner__title {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -4682,8 +4689,8 @@ div.product_new_item a {
 }
 
 .about__count-item>p {
-  font-size: 12px;
-  font-weight: 700;
+  font-size: 13px;
+  font-weight: 800;
   text-transform: uppercase;
   color: #1a152e;
   letter-spacing: 2px;
@@ -4741,7 +4748,7 @@ div.product_new_item a {
 }
 
 .about__text {
-  font-size: 24px;
+  font-size: 22px;
   line-height: 40px;
   color: #0d0b33;
   font-weight: 500;
