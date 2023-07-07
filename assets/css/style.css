@@ -3111,6 +3111,10 @@ p a {
   z-index: 1;
 }
 
+.product__icon span img {
+  width: 32px;
+}
+
 .product__thumb-inner {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
